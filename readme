@@ -1,0 +1,21 @@
+Al incio se ejecuto:
+python -m venv env
+env\Scripts\activate
+pip install fastapi uvicorn sqlalchemy psycopg2-binary
+
+
+este comando sirve para ver que si esta funcionando la bdd
+psql -h localhost -p xpuertox -U postgres -d xnombre_bddx
+
+
+________________________________________________
+Resumen de métodos en FastAPI
+En FastAPI, usas estas palabras clave de Python (@app.get, @app.post, etc.) para definir qué tipo de operación deseas realizar en el endpoint.
+
+GET: Obtener datos
+POST: Crear nuevos datos
+PUT: Actualizar datos completos
+PATCH: Actualizar parcialmente
+DELETE: Eliminar datos
+OPTIONS y HEAD: Para casos más avanzados (configuración de CORS, pruebas de encabezados)
+____________________________________________________
