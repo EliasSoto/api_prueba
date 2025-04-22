@@ -4,7 +4,7 @@ from typing import List
 from app.database import SessionLocal, engine
 from sqlalchemy.orm import Session
 from app.database import get_db
-import schemas, crud, models
+from app import schemas, crud, models
 
 # Crear las tablas en la base de datos
 models.Base.metadata.create_all(bind=engine)
