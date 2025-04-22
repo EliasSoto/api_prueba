@@ -3,7 +3,7 @@ from pydantic import BaseModel
 from typing import List
 from app.database import SessionLocal, engine
 from sqlalchemy.orm import Session
-from database import get_db
+from app.database import get_db
 import schemas, crud, models
 
 # Crear las tablas en la base de datos
